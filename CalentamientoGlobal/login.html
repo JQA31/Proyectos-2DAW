@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header><h1>Crear Cuenta</h1></header>
+    <form action="" method="GET">
+        <label>Nombre de usuario:</label>
+        <input type="text" name="username" >
+
+        <label>Contraseña:</label>
+        <input type="password" name="password" >
+
+
+        <div class="boxes">
+            <input type="checkbox" name="news">
+            ¿Deseas recibir noticas sobre nuestra pagina?
+        </div>
+
+
+        <span>Intereses:</span>
+           <div class="boxes"> 
+            <input type="checkbox" name="interests[]" value="medioambiente">
+                Medioambiente
+            </div>
+            <div class="boxes">
+            <input type="checkbox" name="interests[]" value="tecnologia">
+                Tecnologia
+            </div>
+            <div class="boxes">
+            <input type="checkbox" name="interests[]" value="ciencia">
+                Ciencia
+            </div>
+            
+
+        <span>Género:</span>
+        <div class="boxes">
+            <input type="radio" name="gender" value="masculino">
+            Masculino
+        </div>
+        <div class="boxes">
+            <input type="radio" name="gender" value="femenino">
+            Femenino
+        </div>
+        <div class="boxes">
+            <input type="radio" name="gender" value="otro">
+            Otro
+        </div>
+
+     
+        <label>País:</label>
+        <select name="country">
+            <option value="espana">España</option>
+            <option value="peru">Perú</option>
+            <option value="argentina">Argentina</option>
+            <option value="chile">Chile</option>
+            <option value="colombia">Colombia</option>
+        </select>
+
+        <input type="submit">
+    </form>
+</body>
+</html>
