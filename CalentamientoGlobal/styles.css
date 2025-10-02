@@ -1,0 +1,286 @@
+/* Estilo general del body: fuente, márgenes y color de fondo */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  width: 1521px;
+}
+
+/*Div del titulo centrado con margen izquierdo (1521/2-500/2=510.5 de margen para centrarlo)*/
+#title {
+  text-align: center;
+  width: 500px;
+  text-align: center;
+  margin-left: 510.5px;
+}
+
+/* Encabezado amarillo con texto centrado */
+header {
+  background-color: #e6b63f;
+  color: #ffffff;
+  padding: 10px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 45px;
+}
+
+nav{
+  margin-left: 360.5px;
+  width: 800px;
+}
+
+/* Links del menú de navegación: blancos y sin subrayar */
+nav a {
+  color: #ffffff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+/* Hace que los ítems del menú estén en línea */
+nav li {        
+  display: inline-block;
+}
+
+/* Efecto cuando pasas el mouse por los links del menú */
+nav a:hover {
+  font-weight: bold;
+  transition: ease 0.5s;
+  text-decoration: underline;
+}
+
+/* Centra el contenido principal y le da un ancho máximo */
+main {
+  width: 1460px;
+  margin: 20px ;
+  padding: 20px;
+}
+
+/* Títulos de sección en amarillo y centrados */
+h2 {
+  color: #e6b63f;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Cada sección tiene fondo claro, sombra y separación */
+section {
+  background: #ecf2f4;
+  padding: 20px;
+  margin: 15px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 1370px;
+}
+
+/* Texto más grande para la intro */
+#introduction {
+  font-size: 20px;
+}
+
+/* Tablas con bordes redondeados y fondo claro */
+table {
+  margin-top: 20px;
+  border: 1px solid #000000;
+  padding: 10px;
+  border-collapse: collapse;
+  background: #f8fbfd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Bordes y padding para celdas de tablas */
+th,
+td {
+  border: 1px solid #bdbdbd;
+  padding: 16px 12px;
+}
+
+/* Encabezados de tabla con fondo amarillo */
+th {
+  background: #e6b63f;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/* Estilos para formularios (login, etc) */
+form {
+  max-width: 400px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px 24px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+/* Inputs de texto y select con bordes redondeados y color personalizado */
+form input[type="text"],
+form input[type="password"],
+form select {
+  width: 390px;
+  padding: 10px 8px;
+  margin-bottom: 18px;
+  border: 1px solid #e6b63f;
+  border-radius: 5px;
+  font-size: 16px;
+  background: #f8fbfd;
+  transition: border 0.2s;
+}
+
+/* Checkboxes y radios con color personalizado */
+form input[type="checkbox"],
+form input[type="radio"] {
+  margin-right: 7px;
+  accent-color: #e6b63f;
+}
+
+/* Botón de enviar del formulario: amarillo y grande */
+form input[type="submit"] {
+  width: 400px;
+  background: #e6b63f;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 10px;
+}
+
+/* Botón de enviar cambia de color al pasar el mouse */
+form input[type="submit"]:hover {
+  background: #b38b1b;
+}
+
+/* Imágenes de la tabla de mitos: redondas */
+#myth-reality-table img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Fondo naranja para los mitos */
+.myth {
+  background-color: #de6430;
+}
+
+.myth:hover {
+  transform: scale(1.05);
+  transition: ease 0.3s;
+  font-weight: bold;
+  
+}
+
+/* Fondo verde para las realidades */
+.reality {
+  background-color: #4caf50;
+}
+
+.reality:hover {
+  transform: scale(1.05);
+  transition: ease 0.3s;
+  font-weight: bold;
+}
+
+/* Hace que las celdas de la tabla de mitos sean redondas y centradas */
+#myth-reality-table td,
+#myth-reality-table th {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  border-radius: 50%;
+  border: none;
+  
+}
+
+img:hover { /*Animacion de zoom a las imagenes*/
+  transform: scale(1.1);
+  transition: ease 0.3s;
+}
+
+/* Tabla de mitos más espaciosa y sin bordes */
+#myth-reality-table {
+  margin: 0 auto;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 30px;
+  background-color: #ecf2f4;
+  border: none;
+  font-family: Courier;
+}
+
+/* Subtítulos en negrita y más grandes */
+.subtitle {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+/* El texto de evidencia ocupa la mitad izquierda y la imagen va a la derecha */
+#evidence-text {
+  width: 800px;
+  float: left;
+}
+
+#evidence {
+  overflow: hidden;
+}
+
+/* Imagen de evidencia con bordes redondeados */
+#evidence img {
+  width: 420px;
+  height: auto;
+  border-radius: 8px;
+  margin-left: 65px;
+}
+
+/* Texto de cada solución, centrado y a la izquierda */
+.solution-text {
+  width: 1000px;
+  font-size: 18px;
+  clear:both;
+  margin: 10px;
+}
+
+/* Contenedor de soluciones para que no se desborde */
+#solutions {
+  overflow: hidden;
+}
+
+/* Imagen pequeña de cada solución*/
+.solution-img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+/* Pie de página amarillo y centrado */
+footer {
+  background-color: #e6b63f;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Cada ítem de solución ocupa toda la fila */
+.solution-item{
+  width: 1300px;
+  margin: 10px;
+  margin-left: 35px;
+  display: block;
+  height: 100px;
+}
+
+.left{ /*Pone el elemento a izquierda*/
+  float:left;
+}        
+
+.right{ /*Pone el elemento a la derecha*/
+  float: right;
+}
